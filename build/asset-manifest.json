@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/contacts_management_system/static/css/main.f0dd0fbb.css",
+    "main.js": "/contacts_management_system/static/js/main.9f6535c8.js",
+    "index.html": "/contacts_management_system/index.html",
+    "main.f0dd0fbb.css.map": "/contacts_management_system/static/css/main.f0dd0fbb.css.map",
+    "main.9f6535c8.js.map": "/contacts_management_system/static/js/main.9f6535c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0dd0fbb.css",
+    "static/js/main.9f6535c8.js"
+  ]
+}
