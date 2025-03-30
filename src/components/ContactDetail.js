@@ -1,17 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import user from "../images/user.png";
 
-const ContactDetail = (props) => {
+const ContactDetail = ({ contacts }) => {
+  const { id } = useParams();
+  const contact = contacts.find((contact) => contact.id === id);
+
+  if (!contact) {
+    return <div>Contact not found</div>;
+  }
+
   return (
     <div className="main">
       <div className="ui card centered">
         <div className="image">
-          <img src={user} alt="user"></img>
+          <img src={user} alt="user" />
         </div>
         <div className="content">
-          <div className="header">Nivethini</div>
-          <div className="description">Nivi4225@gmail.com</div>
+          <div className="header">{contact.name}</div>
+          <div className="description">{contact.email}</div>
         </div>
       </div>
       <div className="center-div">
@@ -36,4 +43,5 @@ const ContactDetail = (props) => {
     </div>
   );
 };
+
 export default ContactDetail;

@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="ui container">
-      <Router>
+      <Router basename="/contacts_management_system">
         <Header />
         <Routes>
           <Route
@@ -56,7 +56,10 @@ function App() {
             path="/add"
             element={<AddContact addContactHandler={addContactHandler} />}
           />
-          <Route path="/contact/:id" element={<ContactDetail />} />
+          <Route
+            path="/contact/:id"
+            element={<ContactDetail contacts={contacts} />}
+          />
         </Routes>
       </Router>
     </div>
