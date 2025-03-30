@@ -1,1 +1,0 @@
-# contacts_management_system
